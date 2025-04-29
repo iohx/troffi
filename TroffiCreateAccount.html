@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Troffi</title>
+  <link rel="stylesheet" href="Troffi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <div class="setup-container">
+    <div class="text-section">
+      <p class="intro">Let's get you set up</p>
+      <h2>We'll begin with your name</h2>
+    </div>
+
+    <form class="input-section">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Type your name" required />
+    </form>
+
+    <div class="navigation-section">
+      <a href="Troffiwelcome4.html" class="arrow">‹ back</a>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <a href="TroffiCreateAccount2.html" class="arrow" id="saveNameBtn">next ›</a>
+    </div>
+
+    <div class="footer-logo">Troffi</div>
+
+    <script>
+        document.getElementById("saveNameBtn").addEventListener("click", function(e) {
+          e.preventDefault();
+          const name = document.getElementById("name").value.trim();
+          if (name) {
+            localStorage.setItem("userName", name);
+            window.location.href = "TroffiCreateAccount2.html";
+          } else {
+            alert("Please enter your name!");
+          }
+        });
+      </script>
+  </div>
+</body>
+</html>

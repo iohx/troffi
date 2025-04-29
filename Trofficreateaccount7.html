@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Troffi</title>
+  <link rel="stylesheet" href="Troffi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="setup-container">
+    <div class="text-section">
+      <h2>Great, You're all set</h2>
+      <h2><span class="highlight" id="userNamePlaceholder">name</span>!</h2>
+    </div>
+
+    <div class="image-section">
+      <img src="https://s3-alpha-sig.figma.com/img/2b43/ce6f/b13e7b213d9afe04dfea7393bff9bc24?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ddo0kjpZPcjcWtqH1h30ljoTutXJzqSiZdw2QKsDtmK2Es~WQHp~M0NfBI2IE2xf8ZuYTaZsUGbtulSgLIBgS7AW7Wn0tYtNY881vHC-P43V5v8wKM6ddLAuMpoKsUkt33jqa2EavFgFtEzA18vZNgnfs5sVYyIXkMH2USd4UP67svNeb1pHZPFdnKKk2L6QPLj098UBxLZbugSgzHwUPpSpF6~E6gxv5qx-E5pIMgfI0A8Is3HgnM0Ad045mCB34E-pGiA5Iogg2oBc59dEzFcLruLyPUBWWSb5BSuJdCCpK-7A7MlrpfGS8Popu94ArWncU6AFeAsHVy8GiJbbwQ__" alt="Troffi celebration character" />
+    </div>
+
+    <p class="loading-message">
+      Please give us a moment while we<br>
+      gather your information and create your<br>
+      personalized profile
+    </p>
+
+    <div class="footer-logo">Troffi</div>
+  </div>
+
+  <script>
+    const name = localStorage.getItem("userName");
+    if (name) {
+      document.getElementById("userNamePlaceholder").textContent = name;
+    }
+
+    setTimeout(function() {
+        window.location.href = 'Troffihome.html';
+    }, 3000);
+    
+  </script>
+</body>
+</html>

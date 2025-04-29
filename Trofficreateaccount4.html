@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Troffi</title>
+  <link rel="stylesheet" href="Troffi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <div class="setup-container">
+    <div class="text-section">
+      <p class="intro">Almost done!</p>
+      <h2>Sounds like you're at the right place <span class="highlight" id="userNamePlaceholder">name</span></h2>
+    </div>
+
+    <div class="image-section">
+      <img src="https://s3-alpha-sig.figma.com/img/c1e1/08a4/363a4608905ac641d23f36abe8a3b9be?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Gu4stjlFNTqe19GqbfWOqBjfVrlrbSAz5qC4fhln-TgahDxZtqZEeJsii3sT0A3~hs2yDAtxuBP8skM~wgOOL3GDgd09gmvF1SkhrmsZUtUHJYTEIzpjg49SETEigTPXiMKbm7sVwmczQ9ez79DCCZSGyYkUTww~exLg5ORhwILKYErgUv7epnds-YAmSPrC~iuSimg2ABVCgvMviBIWtb7RFOHlNibY2DzKfrjp20DS~j-3gSnJuZnkfuAP2ojMYbR9x1Pdcq-O6X1YUDx6tiQKqwju9iJbXwyyan5-NrQAsf0BKyEf-GwR3w542YgXjiQC835Lh~UvnP-h-lFi3w__" alt="Troffi character with trophy" />
+    </div>
+
+    <div class="description">
+      <p>
+        Discover a healthier you. Learn, grow, and connect with a community of like-minded individuals here on Troffi.
+      </p>
+    </div>
+
+    <div class="navigation-section">
+        <a href="Trofficreateaccount3.html" class="arrow">‹ back</a>
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <a href="Trofficreateaccount5.html" class="arrow">next ›</a>
+      </div>
+
+    <div class="footer-logo">Troffi</div>
+  </div>
+
+  <script>
+    const name = localStorage.getItem("userName");
+    if (name) {
+      document.getElementById("userNamePlaceholder").textContent = name;
+    }
+  </script>
+</body>
+</html>

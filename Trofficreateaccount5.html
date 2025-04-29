@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Troffi</title>
+  <link rel="stylesheet" href="Troffi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <div class="setup-container">
+    <div class="text-section">
+      <p class="intro">Important details</p>
+      <h2>Tell us about your<br>dietary background</h2>
+    </div>
+
+    <div class="dietary-grid">
+      <div class="dietary-option"> <img src="Dairy Free (1).png" alt="Dairy Free"><p>Dairy Free</p> </div>
+      <div class="dietary-option"> <img src="Gluten Free.png" alt="Gluten Free"><p>Gluten Free</p> </div>
+      <div class="dietary-option"> <img src="Nut Free.png" alt="Nut Free"><p>Nut Free</p> </div>
+      <div class="dietary-option"> <img src="Vegan.png" alt="Vegan"><p>Vegan</p> </div>
+      <div class="dietary-option"> <img src="Halal.png" alt="Halal"><p>Halal</p> </div>
+      <div class="dietary-option"> <img src="Dairy Free (2).png" alt="Lactose Free"><p>Lactose Free</p> </div>
+      <div class="dietary-option"> <img src="Peanut Free.png" alt="Peanut Free"><p>Peanut Free</p> </div>
+      <div class="dietary-option"> <img src="Vegetarian.png" alt="Vegetarian"><p>Vegetarian</p> </div>
+      <div class="dietary-option"> <img src="Kosher.png" alt="Kosher"><p>Kosher</p> </div>
+      <div class="dietary-option"> <img src="Shellfish Free.png" alt="Shellfish Free"><p>Shellfish Free</p> </div>
+    </div>
+
+    <div class="navigation-section">
+      <a href="Trofficreateaccount4.html" class="arrow">‹ back</a>
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+      </div>
+      <a href="Trofficreateaccount6.html" class="arrow">next ›</a>
+    </div>
+
+    <script>
+      const options = document.querySelectorAll('.dietary-option');
+    
+      options.forEach(option => {
+        option.addEventListener('click', () => {
+          option.classList.toggle('selected');
+        });
+      });
+    
+      function getSelectedOptions() {
+        const selected = [];
+        document.querySelectorAll('.dietary-option.selected').forEach(option => {
+          const img = option.querySelector('img');
+          const label = option.querySelector('p').textContent.trim();
+          selected.push({
+            label: label,
+            src: img.getAttribute('src'),
+            alt: img.getAttribute('alt')
+          });
+        });
+        return selected;
+      }
+    
+      // Attach save to "next" arrow
+      document.querySelector('a[href="Trofficreateaccount6.html"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        const selected = getSelectedOptions();
+        localStorage.setItem("dietaryPrefs", JSON.stringify(selected));
+        window.location.href = "Trofficreateaccount6.html";
+      });
+    </script>
+    
+    
+
+    <div class="footer-logo">Troffi</div>
+  </div>
+</body>
+</html>

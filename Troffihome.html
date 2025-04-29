@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Troffi Homepage</title>
+  <link rel="stylesheet" href="Troffi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <script defer src="homepage.js"></script>
+</head>
+<body>
+  <div class="setup-container">
+    <div class="top-icons">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-search"></i>
+    </div>
+
+    <div class="welcome-header">
+        <div class="welcome-text-group">
+          <p class="welcome-text">Welcome,</p>
+          <h2 class="highlight" id="usernameDisplay">Isadora!</h2>
+        </div>
+        <img src="profileicon.png" alt="Profile" class="profile-icon" />
+      </div>           
+
+    <div class="tabs">
+      <span class="active">About</span>
+      <span class="inactive">Goals</span>
+    </div>
+
+    <div class="info-section">
+      <p>Here are your dietary background: <a href="#">Edit</a></p>
+      <div id="dietList" class="diet-icons"></div>
+    </div>
+    <hr>
+
+    <div class="info-section">
+      <p>Here are your dietary details: <a href="#">Edit</a></p>
+      <textarea id="dietDetails" placeholder="Type your details here"></textarea>
+    </div>
+
+    <div class="footer-icons">
+      <i class="fas fa-image"></i>
+      <i class="fas fa-users"></i>
+      <i class="fas fa-camera"></i>
+      <i class="fas fa-envelope"></i>
+      <i class="fas fa-user"></i>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const userName = localStorage.getItem("userName");
+    const dietPrefs = JSON.parse(localStorage.getItem("dietaryPrefs") || "[]");
+    const dietaryDetails = localStorage.getItem("dietaryDetails") || "";
+  
+    if (userName) {
+  document.getElementById("usernameDisplay").textContent = userName + "!";
+    }
+
+  
+    const dietList = document.getElementById("dietList");
+    if (dietPrefs.length === 0) {
+      dietList.innerHTML = "<p>No preferences selected.</p>";
+    } else {
+      dietPrefs.forEach(pref => {
+        const dietItem = document.createElement("div");
+        dietItem.classList.add("diet-icon");
+  
+        dietItem.innerHTML = `
+          <img src="${pref.src}" alt="${pref.alt}" />
+          <p>${pref.label}</p>
+        `;
+  
+        dietList.appendChild(dietItem);
+      });
+    }
+  
+    const dietDetails = document.getElementById("dietDetails");
+    dietDetails.value = dietaryDetails;
+  
+    dietDetails.addEventListener("input", () => {
+      localStorage.setItem("dietaryDetails", dietDetails.value.trim());
+    });
+  });
+  </script>
+
+</body>
+</html>

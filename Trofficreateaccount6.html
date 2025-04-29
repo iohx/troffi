@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Troffi</title>
+  <link rel="stylesheet" href="Troffi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <div class="setup-container">
+    <div class="text-section">
+      <h2>Any details you would like us to know about your relationship with food?</h2>
+    </div>
+
+    <form class="input-section">
+      <textarea id="foodDetails" rows="6" placeholder="Type your details here"></textarea>
+    </form>
+
+    <p class="note">You can always change this later in your profile</p>
+
+    <div class="navigation-section">
+      <a href="Trofficreateaccount5.html" class="arrow">‹ back</a>
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot active"></span>
+      </div>
+      <a href="Trofficreateaccount7.html" class="arrow">next ›</a>
+    </div>
+
+    <script>
+        document.querySelector('.nav-link:last-of-type').addEventListener('click', (e) => {
+          const details = document.getElementById('foodDetails').value.trim();
+          localStorage.setItem('foodDetails', details);
+        });
+      </script>    
+
+    <div class="footer-logo">Troffi</div>
+  </div>
+</body>
+</html>

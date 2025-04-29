@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Troffi</title>
+  <link rel="stylesheet" href="Troffi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <div class="setup-container">
+    <div class="text-section">
+        <h2>Hi <span class="highlight" id="userNamePlaceholder">name</span>,</h2>
+      <h2>what brings you here?</h2>
+    </div>
+
+    <div class="options-section">
+      <button>Eat Healthier</button>
+      <button>Learn more about my diet</button>
+      <button>Discover new recipes</button>
+      <button>Looking for a nutritionalist</button>
+      <button>Not sure yet...</button>
+      <button>Just for fun!</button>
+    </div>
+
+    <div class="navigation-section">
+      <a href="TroffiCreateAccount2.html" class="arrow">‹ back</a>
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <a href="TroffiCreateAccount4.html" class="arrow">next ›</a>
+    </div>
+
+    <div class="footer-logo">Troffi</div>
+    <script>
+        const buttons = document.querySelectorAll('.options-section button');
+      
+        buttons.forEach(button => {
+          button.addEventListener('click', () => {
+            button.classList.toggle('selected');
+          });
+        });
+      
+        const name = localStorage.getItem("userName");
+        if (name) {
+          document.getElementById("userNamePlaceholder").textContent = name;
+        }
+      </script>
+  </div>
+</body>
+</html>

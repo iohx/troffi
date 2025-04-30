@@ -1,0 +1,564 @@
+
+/*Troffiloadingpage*/
+.troffi-loading-screen {
+    background-color: #EEF4D4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  .troffi-loading-screen h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1B2826;
+    margin-bottom: 20px;
+  }
+  
+  .troffi-loading-screen img {
+    width: 120px;
+    height: auto;
+  }
+
+
+
+
+/*Troffi welcome */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    background-color: white;
+    color: #1a1a1a;
+  }
+  .onboarding-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text-section {
+    text-align: left;
+    align-self: flex-start;
+  }
+  .welcome-text {
+    color: #e38e7a;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .sub-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .image-section img {
+    width: 180px;
+    height: auto;
+    margin: 40px 0;
+  }
+  .indicator-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .dot {
+    height: 8px;
+    width: 8px;
+    background-color: #cce6b8;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot.active {
+    background-color: #1a1a1a;
+  }
+  .arrow {
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  a.arrow {
+    text-decoration: none;
+  }
+  .footer-logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+  }
+  .account-options {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .pink-link {
+    color: #e38e7a;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+
+
+
+/*Troffi login*/
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #1a1a1a;
+  }
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  .logo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 80px;
+  }
+  .form-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .form-section p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1.5px solid #e35c5c;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+  }
+  input::placeholder {
+    color: #e5a6a6;
+  }
+  .login-button {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #e5a6a6;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .login-button a {
+    color: white;
+    text-decoration: none;
+  }
+  .bottom-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 60px;
+  }
+  .pink-link {
+    color: #e38e7a;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+
+
+
+  /*Troffi Create Account*/
+  .setup-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    font-family: "Quicksand", sans-serif;
+  }
+  .text-section {
+    margin-bottom: 30px;
+  }
+  .text-section .intro {
+    color: #e5a6a6;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .text-section h2 {
+    color: #1a1a1a;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0;
+  }
+  .input-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .input-section input {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #e38e7a;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+  }
+  .input-section input::placeholder {
+    color: #e5a6a6;
+  }
+  .navigation-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+  .arrow {
+    color: #1a1a1a;
+    font-size: 14px;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }  
+  .footer-logo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+  }
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1.5px solid #e38e7a;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    font-family: "Quicksand", sans-serif;
+    appearance: none;
+    background: url("data:image/svg+xml;utf8,<svg fill='%23e38e7a' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
+    background-color: white;
+    background-size: 16px;
+  }
+  select:invalid {
+    color: #e5a6a6;
+  }
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+.input-section input,
+.input-section select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1.5px solid #e38e7a;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+.text-section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+    line-height: 1.4;
+}
+  .text-section .highlight {
+    color: #e38e7a;
+    font-weight: 400;
+}
+  .options-section {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+  .options-section button {
+    padding: 12px;
+    border: 1.5px solid #1a1a1a;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Quicksand", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.options-section button.selected {
+    background-color: #1B2826;
+    color: #DAEFB3;
+    border-color: #1B2826;
+  }
+  .text-section .intro {
+    color: #e5a6a6;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .text-section h2 {
+    color: #1a1a1a;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .highlight {
+    color: #e38e7a;
+    font-weight: 400;
+  }
+  .image-section {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .image-section img {
+    width: 160px;
+    height: auto;
+  }
+  .description {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .dietary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin: 15px 0;
+  }
+  .dietary-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  .dietary-option img {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #DAEFB3;
+    border-radius: 50%;
+  }
+  .dietary-option p {
+    margin-top: 8px;
+    font-size: 12px;
+    text-align: center;
+    color: #1a1a1a;
+  }
+  .dietary-option.selected img {
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+  }
+  .input-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #e38e7a;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: "Quicksand", sans-serif;
+    resize: none;
+    color: #1a1a1a;
+  }
+  .input-section textarea::placeholder {
+    color: #e5a6a6;
+  }
+  .note {
+    font-size: 12px;
+    color: #555;
+    margin-top: 8px;
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+  }
+  .highlight {
+    color: #e38e7a;
+    font-weight: 400;
+  }
+  .image-section {
+    text-align: center;
+    margin: 40px 0 20px;
+  }
+  .image-section img {
+    width: 140px;
+    height: auto;
+  }
+  .loading-message {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 30px;
+  }
+
+
+
+  /*Troffi Home*/
+.setup-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    font-family: "Quicksand", sans-serif;
+  }
+  .welcome-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .welcome-header h2{
+    margin: 0;
+    color: #1B2826;
+  }
+  .welcome-text-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+.top-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.profile-section p {
+  font-size: 14px;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  font-weight: 600;
+  color: #e38e7a;
+  margin: 10px 0;
+}
+.tabs .active {
+  border-bottom: 2px solid #e38e7a;
+  color: #e38e7a;
+  padding-bottom: 4px;
+}
+.tabs .inactive {
+  color: #999;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 2px 0;
+}
+.info-section {
+  margin: 12px 0;
+}
+.info-section p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+.info-section a {
+  font-weight: normal;
+  color: #999;
+  font-size: 13px;
+  text-decoration: underline;
+  float: right;
+}
+.diet-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.diet-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  margin-top: 6px;
+  text-align: center;
+  background: none;
+  border: none;    
+  box-shadow: none;  
+}
+.diet-icon img {
+  width: 40px;
+  height: 40px;
+  border: none;        
+  border-radius: 50%;
+  margin-bottom: 6px; 
+}
+.diet-icon p {
+  font-size: 12px;
+  margin: 0;
+  color: #1a1a1a;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  border: 1.5px solid #e38e7a;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  color: #1a1a1a;
+  resize: none;
+  box-sizing: border-box;
+}
+textarea::placeholder {
+  color: #e5a6a6;
+}
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #1a1a1a;
+}
